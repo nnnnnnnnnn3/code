@@ -1,0 +1,47 @@
+Problem Statement
+-declaracion del problema
+Alice and Bob are playing a shooting game.
+-Alice y bob estan jugando un juego de shooting
+The players take alternating turns, Alice goes first. In each turn the active player gets to take one shot at a target. Whoever hits the target first, wins the game.
+los jugadores toman turnos alternativos, alice va primero, en cada turno el jugador activo dispara a un objetivo, quien golpee primero al objetivo gana el juego
+
+In any single shot Alice hits the target with probability pAlice, while Bob hits the target with probability pBob.
+en cualquier disparo unico alice golpea al objetivo con una probabilidad de pAlice, mientras que Bob golpea al objetivo con una probabilidad de pBob
+You are given an p such that pAlice = p / 10^6. Compute and return the value of pBob for which both players have an equal chance of winning the game. If this is impossible, return -1 instead.
+Se le da una p tal que pAlice = p / 10 ^ 6. Calcule y devuelva el valor de pBob para el que ambos jugadores tienen las mismas posibilidades de ganar el juego. Si esto es imposible, devuelve -1 en su lugar.
+
+Definition
+Class:
+ShootingGame
+Method:
+findProbability
+Parameters:
+int
+Returns:
+double
+Method signature:
+double findProbability(int p)
+(be sure your method is public)
+
+
+
+- Your answer will be accepted if the absolute error between your answer and the correct answer is less than 10^-6.
+Constraints
+- p will be between 1 and 10^6, inclusive.
+
+
+
+Examples
+0)
+999997
+Returns: -1.0
+Alice almost certainly wins the game already with her first shot, regardless of how good Bob happens to be.
+1)
+400000
+Returns: 0.6666666666666667
+Each of Alice's shots has a 40% probability to hit the target. In order to have the same chance to win as Alice, Bob must be a much better marksman than she is.
+
+
+
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved. 
